@@ -70,7 +70,6 @@ def desvio_medio(lista):
         resultado = num - med    # desvio de cada valor em relação à média
 
         # Garante que o desvio seja positivo (valor absoluto)
-        # sem usar a função abs()
         if resultado < 0:
             resultado *= -1
 
@@ -107,7 +106,7 @@ def desvio_padrao(lista):
         soma += resultado        # acumula os quadrados dos desvios
 
     # Desvio padrão amostral: raiz quadrada da variância amostral
-    # A raiz quadrada é calculada com expoente 0.5, sem usar math.sqrt()
+    # A raiz quadrada é calculada com expoente 0.5
     return round((soma / (len(lista) - 1)) ** 0.5, 2)
 
 
